@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- IMPORT GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet"> 
+
+    <!-- MEDIA QUERIES -->
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <!-- SCROLL ANIMATION WITH CSS -->
+    <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+</head>
+<style>
+    @keyframes nav-effect {
+        10% { 
+            color: white;
+            background-color: #13be77;
+            box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        100% {
+            color: white;
+            background-color: #13be77;
+            box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    }
+    .fixedNav {
+        grid-area: 1 / 1 / 2 / 7;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 4fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        animation: nav-effect linear;
+        animation-timeline: scroll(block root);
+    }
+</style>
+<body>
+    <header>
+        <div class="fixedNav">
+            <div class="button1">
+                <a href="#"><img class="start" src="imagenes/menu.png" alt="home"></a>
+            </div>
+            <div class="logo">
+                <img class="m-logo" src="imagenes/logo2.png" alt="logo">
+            </div>
+            <nav>
+                <img class="select-menu" src="imagenes/selectMenu.png" alt="selectorMenu">
+                <ul class="menu">
+                    <li class="menu-option"><a class="menu-text1" href="#">HOME</a></li>
+                    <li class="menu-option"><a class="menu-text2" href="#">ABOUT</a></li>
+                    <li class="menu-option"><a class="menu-text3" href="#">GALLERY</a></li>
+                    <li class="menu-option"><a class="menu-text4" href="#">COURSES</a></li>
+                    <li class="menu-option"><a class="menu-text5" href="#">BLOG</a></li>
+                    <li class="menu-option"><a class="menu-text6" href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="text-header">
+            <h1>WE ARE LEADING DIGITAL UNIVERSITY</h1>
+            <p class="paragraph-header">
+                Lorem ipsum is simply dummy text of the printing and typesetting. Lorem 
+                Ipsum has been the industry's standard dummy. Lorem Ipsum has been the 
+                industry's standard dummy.
+            </p>
+        </div>
+        <div class="social">
+            <ul class="social-menu">
+                <li><a href="#"><img class="facebook" src="imagenes/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img class="twitter" src="imagenes/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img class="linkedin" src="imagenes/linkedin.png" alt="linkedin"></a></li>
+                <li><a href="#"><img class="instagram" src="imagenes/instagram.png" alt="instagram"></a></li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <form method="POST">
+                <input type="text" class ="input-form1" name="name" value= "Full Name">
+                <input type="text" class ="input-form2" name="email" value="Email Address *">
+                <input type="text" class ="input-form3" name="phone" value="Phone No.">
+                <input type="submit" class="button-form" name="register" value="GET REGISTER NOW">
+            </form>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="text-section1">
+                <div class="line-section1">___</div>
+                <div class="line-section1">Most flexible one page</div>
+                <h2 class="title-section1">A DIGITAL UNIVERSITY HELPING THE WORLD TO GAIN SOME SUCCESS</h2>
+                <audio controls autoplay>
+                    <source src="audio/audioWeb.ogg" type="audio/ogg">
+                    <source src="audio/audioWeb.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                <p class="paragraph-section1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere nisi est, sed ullamcorper nibh
+                    volutpat at. In rutrum, metus ut posuere gravida, tellus lacus faucibus lectus, sed cursused eros ligula
+                    non odio. Suspendisse volutpat sagittis sapien. Curabitur quis malesuada ipsum.
+                </p>
+                <a href="#" class="button-section1">LEARN MORE</a>
+            </div>
+            <div>
+                <ul class="articles">
+                    <li>
+                        <article class="article-section1">
+                            <img src="imagenes/icon1.png" alt="icon1">
+                            <h3 class="title-article">CAREER BUILDING</h3>
+                            <p class="paragraph-article">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit augue diam, accumsan.
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="article-section1">
+                            <img src="imagenes/icon2.png" alt="icon2">
+                            <h3 class="title-article">STUDENT SETUP</h3>
+                            <p class="paragraph-article">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit augue diam, accumsan.
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="article-section1">
+                            <img src="imagenes/icon3.png" alt="icon3">
+                            <h3 class="title-article">LATEST TECHNOLOGIES</h3>
+                            <p class="paragraph-article">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit augue diam, accumsan.
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </div> 
+        </section>
+        <section class="section2">
+            <img class="image-section2" src="imagenes/student.png" alt="photo1">
+            <div class="container-text-section2">
+                <div class="text-section2">
+                    <div class="line-section2">—— Most flexible one page</div>
+                    <h2 class="title-section2">A DIGITAL UNIVERSITY WITH PERFECT SET OF SKILLS FOR EVERYONE.</h2>
+                    <p class="paragraph-section2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut posuere nisi est, sed ullamcorper nibh volutpat at.
+                        In rutrum, metus ut posuere gravidas, tellus lacus faucibus lectus,
+                        sed cursus eros ligula non odio. Suspendisse volutpat sagittis sapien.
+                        Curabitur quis malesuada ipsum.
+                    </p>
+                    <ul class="graphics">
+                        <li class="graphic-container1">
+                            <div class="text-number-graphic1">
+                                <div class="text-graphic">Coding</div>
+                                <div class="number-graphic">79%</div>
+                            </div>
+                            <img class="graphic" src="imagenes/graphic1.png" alt="graphic1">
+                        </li>
+                        <li class="graphic-container2">
+                                <div class="text-number-graphic2">
+                                    <div class="text-graphic">Accuracy</div>
+                                    <div class="number-graphic">95%</div>
+                                </div>
+                            <img class="graphic" src="imagenes/graphic2.png" alt="graphic2">
+                        </li>
+                        <li class="graphic-container3">
+                                <div class="text-number-graphic3">
+                                    <div class="text-graphic">Planning</div>
+                                    <div class="number-graphic">87%</div>
+                                </div>
+                            <img class="graphic" src="imagenes/graphic3.png" alt="graphic3">
+                        </li>
+                    </ul>
+                    <a href="#" class="button-section2">LEARN MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="text-gallery">
+                <div class="textSection3">
+                    <span class="line-section3">Latest design of our company</span>
+                    <h2 class="title-section3">OUR UNIVERSITY GALLERY</h2>
+                </div>
+                <div class="textSection3">
+                    <p class="paragraph-section3">
+                        Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.
+                        Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin.
+                        Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel
+                        tristique risus faucibus. 
+                    </p>
+                    <p class="paragraph-section3">
+                      Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.
+                      Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin.
+                      Quisque vitae sodales lectus.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <ul class="gallery-menu">
+                    <li><a href="#" class="gallery-menu-option-color" >All </a>/</li>
+                    <li><a href="#" class="gallery-menu-option"> Events </a>/</li>
+                    <li><a href="#" class="gallery-menu-option"> Labs </a>/</li>
+                    <li><a href="#" class="gallery-menu-option"> Sports </a>/</li>
+                    <li><a href="#" class="gallery-menu-option"> Competitions </a></li>
+                </ul>
+            </div>
+            <div class="photos-container">
+                <img src="imagenes/collage1.png" id="photo1" alt="gallery1">
+                <img src="imagenes/collage2.png" id="photo2" alt="gallery2">
+                <img src="imagenes/collage3.png" id="photo3" alt="gallery3">
+                <img src="imagenes/collage4.png" id="photo4" alt="gallery4">
+                <img src="imagenes/collage5.png" id="photo5" alt="gallery5">
+                <img src="imagenes/collage6.png" id="photo6" alt="gallery6">
+                <img src="imagenes/collage7.png" id="photo7" alt="gallery7">
+                <img src="imagenes/collage8.png" id="photo8" alt="gallery8">
+            </div>
+            <div class="video">
+                <video width="450" height="350" controls>
+                    <source src="video/videoUniversity.mp4" type="video/mp4">
+                    <source src="video/videoUniversity.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video> 
+            </div>
+            <div class="youtube-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hAAAFJMez4Q?si=VP6AhEJi4WxQn4Ja" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </div>
+            <div class="quote">
+                <div class="mark1">
+                    <img src="imagenes/quoteMark1.png" alt="quotationMarks1">
+                </div>
+                <div class="quote-text"> 
+                    <span class="color4">EDUCATION</span> IS ALLOWING YOURSELF TO MAKE
+                    MISTAKES ART IS KNOWING WHICH ONES YOU KEEP
+                </div>
+                <div class="author">
+                    <span class="author-section3">Alice Johnson</span>
+                </div>
+                <div class="mark2">
+                    <img src="imagenes/quoteMark2.png"  alt="quotationMarks2">
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="container-text-section4">
+                <div class="text-section4">
+                    <div class="line-section4">— Most flexible one page</div>
+                    <h2 class="title-section4">MACHINE LEARNING DIGITAL LATEST COURSE 2020</h2>
+                    <p class="paragraph-section4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Ut posuere nisi est, sed ullamcorper nibh volutpat at. In
+                        rutrum, metus ut posuere gravida, tellus lacus faucibus
+                        lectus, sed cursus eros ligula non odio. Suspendisse volutpat
+                        sagittis sapien. Curabitus quis malesuada ipsum.
+                    </p>
+                    <a href="#" class="button-section4">LAUNCH COURSE</a>
+                    <div class="container-arrows">
+                        <a href="#" class="arrow1">&lt;</a>
+                        <a href="#" class="arrow2">&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <img class="photo-section4" src="imagenes/student2.png" alt="photo2">
+        </section>
+        <section>
+            <div class="text-section5">
+                <div class="line-section5">___</div>
+                <div class="line-section5-1">Most flexible one page</div>
+                <h2 class="title-section5">VERY AFFORDABLE PRICING FOR ALL COURSES.</h2>
+                <p class="paragraph-section5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut posuere nisi est, sed ullamcorper nibh volutpat at. In rutrum,
+                    metus ut posuere gravida, tellus lacus faucibus lectus, sed 
+                    cursus eros ligula non odio. Suspendisse volutpat sagittis sapien.
+                    Curabitur quis malesuada ipsum.  
+                </p>
+            </div>
+            <div>
+                <ul class="articles2">
+                    <li>
+                        <article class="article2">
+                            <h3 class="title-articles2">STARTUP</h3>
+                            <p class="paragraph-article2">
+                                Click edit button to change this text. Lorem dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <ul class="options">
+                                <li class="price"><span class="dollar">$</span><span class="big-number">19</span><span class="month"> / Month</span></li>
+                                <li class="option">Full Access</li>
+                                <li class="option">Unlimited Bandwidth</li>
+                                <li class="option">Email Accounts</li>
+                                <li class="option">8 Free Forks Every Months</li>
+                            </ul>
+                            <a href="#" class="button-article2">Learn More</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="article2">
+                            <h3 class="title-articles2" style="color: #13be77">STANDARD</h3>
+                            <p class="paragraph-article2">
+                                Click edit button to change this text. Lorem dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <ul class="options">
+                                <li class="price"><span class="dollar" style="color: #13be77">$</span><span class="big-number" style="color: #13be77">56</span><span class="month" style="color: #13be77"> / Month</span></li>
+                                <li class="option">Full Access</li>
+                                <li class="option">Unlimited Bandwidth</li>
+                                <li class="option">Email Accounts</li>
+                                <li class="option">8 Free Forks Every Months</li>
+                            </ul>
+                            <a href="#" class="button-article2-color">Learn More</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="article2">
+                            <h3 class="title-articles2">PREMIUM</h3>
+                            <p class="paragraph-article2">
+                                Click edit button to change this text. Lorem dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <ul class="options">
+                                <li class="price"><span class="dollar">$</span><span class="big-number">89</span><span class="month"> / Month</span></li>
+                                <li class="option">Full Access</li>
+                                <li class="option">Unlimited Bandwidth</li>
+                                <li class="option">Email Accounts</li>
+                                <li class="option">8 Free Forks Every Months</li>
+                            </ul>
+                            <a href="#" class="button-article2">Learn More</a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section6">
+            <h2 class="elizabeth-h2">ELIZABETH TAYLOR</h2>
+            <div>
+                <img class="quotation-image" src="imagenes/quotationMark3.png" alt="quotationMarks3">
+                <p class="paragraph-section6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut posuere nisi est, sed ullamcorper nibh volutpat at. In rutrum, 
+                    metus ut posuere gravida, tellus lacus faucibus lectus, sed cursus 
+                    eros ligula non odio. Suspendisse volutpat sagittis sapien. Curabitus quis 
+                    malesuada ipsum.
+                </p>
+            </div>
+            <div class="elizabeth-bottom">
+                <img class ="elizabeth" src="imagenes/elizabeth.png" alt="elizabeth">
+                <div class="description-elizabeth">
+                    <div class="color">elizabeth Taylor</div>
+                    <div class="amazon">Amazon</div>
+                </div>
+                <ul class="social-elizabeth">
+                    <li><a href="#"><img class="facebook-elizabeth" src="imagenes/facebook2.png" alt="facebook2"></a></li>
+                    <li><a href="#"><img class="twitter-elizabeth" src="imagenes/twitter2.png" alt="twitter2"></a></li>
+                    <li><a href="#"><img class="linkedin-elizabeth" src="imagenes/linkedin2.png" alt="linkedin2"></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-container">
+            <div class="contact">
+                <div class="line-footer">
+                    Lorem ipsum dolor sit amet consectetur
+                </div>
+                <h2 class="title-footer">DIGITAL UNIVERSITY</h2>
+                <p class="paragraph-footer1">
+                    123 Stree New York City, United States Of America.
+                </p>
+                <p class="paragraph-footer2">
+                    Office Telephone: 001 01085379709
+                    Mobile: 001 63165370895
+                </p>
+                <p class="paragraph-footer2">
+                    Email: admin@website.company
+                    Inquiries: email@website.company
+                </p>
+                <p class="paragraph-footer2">
+                    Mon-Fri 9am to 6pm
+                </p>
+                <ul class="social-contact-list">
+                    <li><a href="#"><img class="facebook-contact" src="imagenes/facebook2.png" alt="facebook3"></a></li>
+                    <li><a href="#"><img class="twitter-contact" src="imagenes/twitter2.png" alt="twitter3"></a></li>
+                    <li><a href="#"><img class="google-contact" src="imagenes/google.png" alt="google"></a></li>
+                    <li><a href="#"><img class="linkedin-contact" src="imagenes/linkedin2.png" alt="linkedin3"></a></li>
+                    <li><a href="#"><img class="instagram-contact" src="imagenes/instagram2.png" alt="instagram2"></a></li>
+                    <li>
+                        <svg height="130" width="500">
+                            <defs>¡
+                              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:rgb(0,128,255);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgb(0,255,128);stop-opacity:1" />
+                              </linearGradient>
+                            </defs>
+                            <ellipse cx="200" cy="70" rx="70" ry="45" fill="url(#grad1)" />
+                            <text fill="#ffffff" font-size="30" font-family="Verdana" x="170" y="80">M</text>
+                            <text fill="#ffffff" font-size="30" font-family="Verdana" x="200" y="80">S</text>
+                             Sorry, your browser does not support inline SVG.
+                          </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="maps">
+            <iframe class="iframe-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d764.1511576019333!2d-0.06946321967391089!3d39.99494001675104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5fff14c37cb447%3A0xaa733bff4d345712!2sFacultad%20de%20Ciencias%20Humanas%20y%20Sociales!5e0!3m2!1ses!2ses!4v1705835007923!5m2!1ses!2ses" 
+            width="555" height="485" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+</html>
