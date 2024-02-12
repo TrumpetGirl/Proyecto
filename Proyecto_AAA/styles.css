@@ -613,6 +613,11 @@ article {
     margin-top: 50px;
 }
 
+.iframe-style {
+    width: 560;
+    height: 315;
+}
+
 .quote {
     display: grid;
     width: 800px;
