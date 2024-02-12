@@ -110,11 +110,16 @@ ul {
 .menu-text1, .menu-text2, .menu-text3, .menu-text4, .menu-text5, .menu-text6 {
     font-family: var(--style-font-titles);
     font-size: 1rem;
+   
+}
+
+.menu-text:focus {
+    outline: 2px solid #0050a5;
 }
 
 .menu-text1::before {
     content: ""; 
-    position: absolute;
+    position: absolute; 
     top: 10px; 
     left: 50%; 
     transform: translateX(-50%); 
@@ -172,6 +177,10 @@ h1:hover {
 
 .facebook:hover, .twitter:hover, .linkedin:hover, .instagram:hover {
     transform: rotate(360deg);
+}
+
+.social-focus:focus {
+    outline: 2px solid #0050a5;
 }
 
 .form-container {
