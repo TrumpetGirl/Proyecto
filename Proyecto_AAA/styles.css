@@ -502,21 +502,23 @@ article {
     position: sticky;
 }
 
-.gallery-menu-option-color {
+.gallery-menu-option-color-underline {
     color: var(--green-color);
     font-family: var(--style-font-paragraphs);
     font-size: 0.9rem;
+    text-decoration: underline;
 }
 
-.gallery-menu-option {
+.gallery-menu-option-underline {
     color: var(--clear-black-color); 
     font-family: var(--style-font-paragraphs);
     font-size: 0.9rem;
     
 }
 
-.gallery-menu-option:hover {
+.gallery-menu-option-underline:hover {
     color: var(--green-color);
+    text-decoration: underline;
 }
 
 .photos-container {
@@ -611,6 +613,11 @@ article {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.iframe-style {
+    width: 560;
+    height: 315;
 }
 
 .quote {
