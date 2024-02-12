@@ -513,12 +513,12 @@ article {
     color: var(--clear-black-color); 
     font-family: var(--style-font-paragraphs);
     font-size: 0.9rem;
+    text-decoration: underline;
     
 }
 
 .gallery-menu-option-underline:hover {
     color: var(--green-color);
-    text-decoration: underline;
 }
 
 .photos-container {
