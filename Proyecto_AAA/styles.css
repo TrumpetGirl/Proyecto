@@ -56,7 +56,7 @@ body {
 
 /* HEADER */
 header {
-    background-image: url("imagenes/background.png");
+    background-image: url("imagenes/backgrould.png");
     background-size: cover;
     color: var(--white-color);
     display: grid;
