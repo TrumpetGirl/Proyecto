@@ -58,6 +58,7 @@ body {
 header {
     background-image: url("imagenes/background.webp");
     background-size: cover;
+    background-repeat: no-repeat;
     color: var(--white-color);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
