@@ -2,7 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta name="author" content="María Seligrat">
+    <meta name="description" content="HTML5 & CSS3 project created by María for DAW2, subject: Diseño de Interfaces Web">
+    <meta name="keywords" content="HTML, css, javascript, university, digital, courses, daw">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University</title>
 
     <!-- STYLE SHEET -->
@@ -23,6 +26,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logico/lazy-youtube-embed/dist/lazy-youtube-embed.css" />
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazy-youtube-embed@1.0.0/dist/lazy-youtube-embed.js" defer></script>
+
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            let img = document.querySelector("div.youtube-video img");
+            img.setAttribute("alt", "YouTube video");
+        });
+    </script>
 </head>
 <style>
     @keyframes nav-effect {
@@ -233,7 +243,7 @@
                 <img src="imagenes/collage8.png" id="photo8" alt="gallery8">
             </div>
             <div class="video">
-                <video width="450" height="350" controls>
+                <video width="450" height="350" controls="">
                     <source src="video/videoUniversity.mp4" type="video/mp4">
                     <source src="video/videoUniversity.ogg" type="video/ogg">
                   Your browser does not support the video tag.
